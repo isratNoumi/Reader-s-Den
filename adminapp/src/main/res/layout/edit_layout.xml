@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:id="@+id/phone_Cardview"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="1000dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            android:id="@+id/img1"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nametext"
+            android:text=" Demo Name"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img1"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prctext"
+            android:text="Demo price"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/nametext"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/catgtext"
+            android:text=" book category"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/img1"
+            android:layout_below="@id/prctext"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/editbtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/catgtext"
+            android:layout_marginTop="29dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="#EA8268"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#DD3535"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="My Profile"
+        />
+    <LinearLayout
+
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lnl1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal"
+            android:background="@drawable/custom"
+            android:layout_margin="5dp">
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/usimg"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_person_24"/>
+                <ImageButton
+                    android:id="@+id/imgv"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="5dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/ic_baseline_photo_camera_24"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/txtedit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Edit Profile"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_below="@id/lnl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imageView"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_dark_background"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_below="@id/imageView"
+                    android:hint="Enter your name" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/editTextTextPersonName"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imageView2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_below="@id/editTextTextPersonName"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Enter your email"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_below="@id/imageView2"
+                     />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/phone2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/editTextTextPersonName2"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imageView2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_below="@id/editTextTextPersonName2"
+                    android:text="Phone" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Enter your Phone No"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_below="@id/imageView3"
+                    />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/editTextTextPersonName3"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imageView4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_below="@id/editTextTextPersonName3"
+                    android:text="Address" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Enter your Address"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_below="@id/imageView4"
+                    />
+                <Button
+                    android:id="@+id/btnup"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom"
+                    android:text="Upload"
+                    android:layout_below="@id/editTextTextPersonName4"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_payment_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFF624E"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Your Payment"
+            app:titleMarginStart="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_user"
+            android:textColor="#DD3535"
+            android:layout_below="@+id/my_payment_toolbar"
+            android:text="UserName"
+            android:layout_margin="5dp"
+            android:textSize="14dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/name_user"
+            android:id="@+id/imgo"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_person_24"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_er"
+            android:text="UserName"
+
+            android:textColor="@color/cardview_dark_background"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/imgo"
+            android:layout_below="@+id/name_user"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_user"
+            android:layout_below="@+id/imgo"
+            android:text="Address"
+            android:textColor="#DD3535"
+            android:layout_margin="5dp"
+            android:textSize="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_er"
+            android:text="UserAddress"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_below="@+id/add_user"/>
+
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec"
+            android:layout_below="@+id/add_er"
+            android:text="RECEIPTS:"
+            android:textColor="#DD3535"
+            android:layout_margin="5dp"
+            android:textSize="16dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/r_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rec"/>
+
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r_view"
+            android:layout_marginTop="16dp"
+            android:background="#F1D2CE"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:text="Sub Cost:"
+            android:textAlignment="center"
+            android:textColor="#534F4F"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r_view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toEndOf="@+id/textView67"
+            android:layout_toRightOf="@+id/textView67"
+            android:background="#F1D2CE"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:text=" 0 TK"
+            android:textAlignment="center"
+            android:textColor="#534F4F"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView67"
+            android:layout_marginTop="0dp"
+            android:background="#F1D2CE"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:text="Total Cost:"
+            android:textAlignment="center"
+            android:textColor="#534F4F"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView67"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="-12dp"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toEndOf="@+id/textView66"
+            android:layout_toRightOf="@+id/textView66"
+            android:background="#F1D2CE"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:text=" 0 TK"
+            android:textAlignment="center"
+            android:textColor="#534F4F"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r_view"
+            android:layout_marginTop="67dp"
+            android:background="#F1D2CE"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:text="Shipping Cost:"
+            android:textAlignment="center"
+            android:textColor="#534F4F"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/r_view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toEndOf="@+id/textView67"
+            android:layout_toRightOf="@+id/textView67"
+            android:background="#F1D2CE"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:text=" 100 TK"
+            android:textAlignment="center"
+            android:textColor="#534F4F"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/confirmbtn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView69"
+            android:layout_marginTop="30dp"
+            android:text="Confirm and CheckOut"
+            android:background="#FFFF624E"/>
+    </RelativeLayout>
+    </ScrollView>
+

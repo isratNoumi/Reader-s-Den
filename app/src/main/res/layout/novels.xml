@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="13dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card6"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Order Id"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bookName_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BookName"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Bill"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/totalBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TotalQuantity"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delivery Address"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/del_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TotalPrice"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Order Date"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/datem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TotalPrice"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

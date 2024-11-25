@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginTop="70dp"
+        android:inputType="textMultiLine"
+        android:text="WELCOME TO BOI WALA"
+        android:textColor="#FFF7F7"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/buttonMAIL"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/custom"
+        android:backgroundTint="#D60819"
+        android:text="Sign In Using EMAIL"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DD3535"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Admin DashBoard"
+        app:titleMarginStart="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rtl"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/toolbar1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignLeft="@id/img"
+            android:layout_marginLeft="210dp"
+            android:gravity="center"
+            android:text="Readers Den"
+            android:textAlignment="center"
+            android:textColor="#F14848"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ltl"
+        android:layout_below="@id/rtl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd1"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bookpic"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/acme"
+                android:gravity="center|center_horizontal"
+                android:text="Add New Books"
+                android:textColor="#F44336"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/library2"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/acme"
+                android:gravity="center|center_horizontal"
+                android:text="See Book list"
+                android:textColor="#F44336"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/ltl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd3"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/edit"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/acme"
+                android:gravity="center|center_horizontal"
+                android:text="Edit Book list"
+                android:textColor="#F44336"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crd4"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/delete2"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/acme"
+                android:gravity="center|center_horizontal"
+                android:text="Delete"
+                android:textColor="#F44336"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
+
+
