@@ -5,17 +5,17 @@
 ## Key Features
 
 ### User Features:
-- **Browse Books**: Explore a wide range of books across multiple categories.
-- **Detailed Book Information**: View book details including price, description, and image.
-- **Add to Cart**: Add books to the shopping cart for easy checkout.
-- **Secure Login**: Sign up and log in securely using **Firebase Authentication**.
-- **Manage Profile**: Update user details and view order history.
-- **Order Management**: Place orders and track their status.
+- Browse Books: Explore a wide selection of books across various categories.
+- Detailed Book Information: View detailed information, including price, description, and images.
+- Add to Cart: Easily add books to the shopping cart for a quick checkout.
+- Secure Login: Sign up and log in securely using Firebase Authentication.
+- Manage Profile: Update personal details and track order history.
+- Order Management: Place orders and track their status in real-time.
 
 ### Admin Features:
-- **Book Management**: Add, update, or delete books from the inventory.
-- **Customer Management**: View and manage customer orders.
-- **Admin Authentication**: Admins can securely log in to the system via Firebase Authentication.
+- Book Management: Add, update, or delete books from the inventory.
+- Customer Management: View and manage customer orders.
+- Admin Authentication: Admins can securely log in to the system via Firebase Authentication.
 
 ## Technologies Used
 
@@ -33,7 +33,7 @@ To get started with the Readers' Den Android app, follow these steps:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Readers-Den.git
+git clone https://github.com/yourusername/Reader-s-Den.git
 ```
 ## 2. Set Up Firebase
 
